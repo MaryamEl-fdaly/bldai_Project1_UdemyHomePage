@@ -10,5 +10,5 @@ A responsive like Udemy home page created using sematic HTML and CSS. There are 
 
 ## How to run the project
 
-- **Downlowd or clone the repository
+- **Downlowd or clone the repository**
 - **Open index.html in any browser**
