@@ -4,7 +4,7 @@
 
 A responsive like Udemy home page created using sematic HTML and CSS. There are 3 sections:
 
-- ** Navigation Bar**
+- **Navigation Bar**
 - **Header Section**
 - **Courses Section**
 
