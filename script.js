@@ -58,15 +58,16 @@ catch(e){
  )
 
 
+ /*Search Filtering*/
+
  const filterCourses = (e) =>{
   
     e.preventDefault();
     let searchWord = searchInput.value.toUpperCase();
     console.log(searchWord);
-    for(let i=0;i<cardTitle.length;++i)
+    for(let i=0;i<card.length;++i)
     {
-        let match = card[i];
-
+        let match = card[i].querySelector('.title1');
         if(match){
             let textValue = match.textContent ; 
             if(textValue.toUpperCase().indexOf(searchWord) > -1){
