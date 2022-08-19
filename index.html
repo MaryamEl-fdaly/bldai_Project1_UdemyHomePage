@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/3c531def6a.js" crossorigin="anonymous"></script>
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <title>Udemy Home Page</title>
 </head>
@@ -76,264 +77,165 @@
             <h1>A broad selection of courses</h1>
             <p>Choose from 185,000 online video courses with new additions published every month</p>
         </div>
-        <ul class="courses-Sections">
-            <li class="secion active"><a href="#">Python</a></li>
-            <li class="secion"><a href="#">Excel</a></li>
-            <li class="secion"><a href="#">Web Development</a></li>
-            <li class="secion"><a href="#">JavaScript</a></li>
-            <li class="secion"><a href="#">Data Science</a></li>
-            <li class="secion"><a href="#">AWS Certification</a></li>
-            <li class="secion"><a href="#">Drawing</a></li>
+        <ul class="nav courses-Sections" role="tablist"> <!---courses-Sections--->
+            <li class="nav-item" role="presentation" id="python" >
+                <button class="nav-link active" data-bs-toggle="tab" id="python-tab" type="button" aria-current="true">
+                    Python
+                </button>
+            </li>
+            <li class="nav-item" role="presentation" id="excel">
+                <button class="nav-link"  data-bs-toggle="tab" type="button" id="Excel-tab"  aria-current="false">
+                    Excel
+                </button>
+            </li>
+            <li class="nav-item" role="presentation" >
+                <button  class="nav-link" id="web" data-bs-toggle="tab" type="button" id="web-development-tab"  aria-current="false">
+                    Web Development
+                </button>
+                </li>
+            <li class="nav-item" role="presentation" id="javascript">
+                <button class="nav-link" data-bs-toggle="tab" type="button" id="JavaScript-tab"  aria-current="false">
+                    JavaScript
+                </button>
+            </li>
+            <li class="nav-item" role="presentation" id="data">
+                <button class="nav-link" data-bs-toggle="tab" type="button" id="Data-Science-tab"  aria-current="false">
+                    Data Science
+                </button>
+            </li>
+            <li class="nav-item" role="presentation" id="aws">
+                <button class="nav-link"  data-bs-toggle="tab" type="button" id="AWS-tab"  aria-current="false">
+                AWS Certification
+                </button>
+            </li>
+            <li class="nav-item" role="presentation" id="drawing">
+                <button class="nav-link" data-bs-toggle="tab" type="button" id="Drawing-tab"  aria-current="false">
+                    Drawing
+                </button>
+            </li>
         </ul>
         <div class="Courses-Levels">
             <div class="Word-about-course">
-                <h2>Expand your career opportunities with Python</h2>
-                <p>Take one of Udemy’s range of Python courses and learn how to code
+                <h2 class="category-title"><!---Expand your career opportunities with Python---></h2>
+                <p class="category-des"><!---Take one of Udemy’s range of Python courses and learn how to code
                     using this incredibly useful language. Its simple syntax and
                     readability makes Python perfect for Flask, Django, data science,
                     and machine learning. You’ll learn how to build everything from
                     games to sites to apps. Choose from a range of courses that will
-                    appeal to both beginners and advanced developers alike.</p>
+                    appeal to both beginners and advanced developers alike.---></p>
             </div>
-            <button class="Explore">Explore Python</button>
+            <button class="Explore">Explore <!---Python---></button>
+            <div id="courses_reco" class="carousel slide courses_reco" data-bs-ride="carousel">
+                <div class="carousel-inner">
             <div class="Courses-Cards">
-            <!-- Course1 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
+                        <template id="Courses-Cards" class="Courses-Cards" >
+                            <div class="card">
+                                <div class="course-img">
+                                    <img alt="course-img" src="">
+                                </div>
+                                    <h3 class="title1"></h3>
+                                <div class="author"></div>
+                                
+
+                            </div>
+                        </template>
+                        </div>
+                        <button class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>   
-                <!-- Course2 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
                     
-                </div>   
-                 <!-- Course3 -->    
-                 <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>  
-                <!-- Course4 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>
-                <!-- Course5 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>
-                <!-- Course6 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>   
-                <!-- Course7-->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
+                 
                     
-                </div>   
-                 <!-- Course8 -->    
-                 <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>  
-                <!-- Course9 -->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
-                </div>
-                <!-- Course10-->    
-                <div class="card">
-                    <div class="course-img">
-                        <img alt="course-img" src="">
-                        <div class="hover-effect"></div>
-                    </div>
-                    <div class="title">
-                        <h3 class="title1"></h3>
-                    </div>
-                    <div class="author"></div>
-                    <div class="rating">
-                        <span class="rate"></span>
-                        <span class="star">
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star icon"></i>
-                            <i class="fa-solid fa-star-half-stroke icon"></i>
-                            <span class="reviews-numb"></span>
-                        </span>
-                    </div>
-                    <div class="price"></div>
+            
                 </div> 
+           
             </div>
-        </div>
+          
     </section>
 </div>
+
+    <section class="container ">
+        <h2 class="fw-bolder">Top Categories</h2>
+        <div class="row ">
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-2x-v2.jpg">
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5 "> Design </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-development-2x-v2.jpg" >
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5"> Development </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-2x-v2.jpg" >
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5"> Marketing </span></div>
+            </a>
+            </div>
+             <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-2x-v2.jpg">
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5"> It and Software </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid " alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-2x-v2.jpg">
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder "><span class="fs-5"> Personal Development </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-business-2x-v2.jpg">
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5"> Business </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-2x-v2.jpg">
+                </div>
+                <div class="text-start mb-3 mt-2 fw-bolder"><span class="fs-5"> Photography </span></div>
+            </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  mt-3">
+            <a href="">
+                <div class="img">
+                    <img class="img-fluid" alt="art" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-2x-v2.jpg">
+                </div>
+                <div class="text-start  mb-3 mt-2 fw-bolder "><span class="fs-5"> Music </span></div>
+            </a>
+            </div>        
+        </div>
+    </section>
+
 </body>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+    <!--fontAwesome-->
+    <script src="https://kit.fontawesome.com/3c531def6a.js" crossorigin="anonymous"></script>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>
                                                                    

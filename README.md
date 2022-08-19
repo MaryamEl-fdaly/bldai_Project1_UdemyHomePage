@@ -2,11 +2,12 @@
 
 ## About the Project
 
-A responsive like Udemy home page created using sematic HTML, CSS and Javascript. There are 3 sections:
+A responsive like Udemy home page created using sematic HTML, CSS, Javascript and Bootstrap. There are 4 main sections:
 
 - **Navigation Bar - working search**
 - **Header Section**
 - **Courses Section**
+- **Top Categories Section**
 
 ## How to run the project
 
